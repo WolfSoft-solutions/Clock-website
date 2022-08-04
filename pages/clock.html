@@ -1,0 +1,29 @@
+<!--make a page with a time on screen-->
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Klok</title>
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="icon" href="/img/icon.png">
+    </head>
+    <body>
+        <div class="center">
+            <h1>Tijd</h1>
+            <h2 id="time"></h2>
+            <h6><a href='/upload'>upload een foto</a></h6>
+        </div>
+    </body>
+    <script>
+        var time = document.getElementById("time");
+        setInterval(function(){
+            time.innerHTML = new Date().toLocaleTimeString();
+        }, 1);
+    </script>
+    <script>
+        setInterval(function(){
+            const img = "/uploads/"+new Date().getMinutes()+'-image.png';
+            document.body.style.background = "url('"+img+"')  no-repeat center center fixed";
+            document.body.style.backgroundColor = '#3e3e3e';
+        }, 1);
+    </script>
+</html>

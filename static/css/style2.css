@@ -1,0 +1,17 @@
+body {
+    color: #fff;
+}
+div.center {
+    display: block;
+    margin: auto;
+    width: max-content;;
+    padding: 10px;
+    height: max-content;
+    background-color: #003340, #003340;
+}
+a {
+    color: #8c00ff;
+}
+a:hover {
+    color: #00fff2;
+}
