@@ -7,7 +7,7 @@ div.center {
     width: max-content;;
     padding: 10px;
     height: max-content;
-    background-color: #003340, #003340;
+    background-color: rgba(63, 63, 63, 0.699);
 }
 a {
     color: #8c00ff;
