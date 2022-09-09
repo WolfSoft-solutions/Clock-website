@@ -16,7 +16,7 @@ const handleError = (err, res) => {
     res
       .status(500)
       .contentType("text/plain")
-      .end("Oops! Iets ging verkeerd!\n"+err);
+      .end("Oops! Something went wrong!\n"+err);
 };
 
 
@@ -41,7 +41,7 @@ app.post(
         res.status(400)
         .sendFile(path.join(__dirname, 'pages', "error.html"));
         
-    }
+      }
   
       if (path.extname(req.file.originalname).toLowerCase() === ".png") {
         fs.rename(tempPath, targetPath, err => {
